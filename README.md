@@ -81,21 +81,6 @@ Create a new room.
 ROOM_OBJECT
 ```
 
-## GET: /rooms
-List all rooms.
-### Request:
-N/A
-### Response:
-```
-{
-  data: [
-    ROOM_OBJECT,
-    ROOM_OBJECT,
-    ROOM_OBJECT,
-  ]
-}
-```
-
 ## GET: /rooms/{token}
 Get an existing room's info.
 ### Request:
@@ -129,6 +114,68 @@ Create a new round and start it.
 ### Response:
 ```
 {
+  token: 'X7J6',
+  roundNumber: 2,
+  roundId: 'asdf',
+  revealed: false
+}
+```
 
+## PATCH: /rooms/{token}/rounds/{roundId}/revealed
+### Request:
+```
+{
+  revealed: true
+}
+```
+### Response:
+```
+{
+  token: 'X7J6',
+  roundNumber: 2,
+  roundId: 'asdf',
+  revealed: true
+}
+```
+
+## POST: /rooms/{token}/rounds/{roundId}/results
+This will finalize the current round. The precondition to this is that all users agree on the card.
+### Request:
+NA
+### Respose:
+```
+{
+  token: 'X7J6',
+  roundId: 'asdf'
+  result: '3'
+}
+```
+
+
+
+
+
+
+## Not in Spec
+<hr/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+## GET: /rooms
+List all rooms.
+### Request:
+N/A
+### Response:
+```
+{
+  data: [
+    ROOM_OBJECT,
+    ROOM_OBJECT,
+    ROOM_OBJECT,
+  ]
 }
 ```
