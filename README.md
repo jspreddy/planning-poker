@@ -66,7 +66,7 @@
 ```
 
 
-## POST: /poker/rooms
+## POST: /rooms
 Create a new room.
 ### Request:
 ```
@@ -81,7 +81,7 @@ Create a new room.
 ROOM_OBJECT
 ```
 
-## GET: /poker/rooms
+## GET: /rooms
 List all rooms.
 ### Request:
 N/A
@@ -96,7 +96,7 @@ N/A
 }
 ```
 
-## GET: /poker/rooms/{token}
+## GET: /rooms/{token}
 Get an existing room's info.
 ### Request:
 N/A
@@ -107,7 +107,7 @@ N/A
 }
 ```
 
-## POST: /poker/rooms/{token}/participants
+## POST: /rooms/{token}/participants
 Join a room.
 ### Request:
 ```
@@ -122,7 +122,7 @@ Join a room.
 }
 ```
 
-## POST: /poker/rooms/{token}/rounds
+## POST: /rooms/{token}/rounds
 Create a new round and start it.
 ### Request:
 
