@@ -156,14 +156,18 @@ NA
 
 
 
-## Not in Spec
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <hr/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+## Not in Spec
+
+<hr/>
 
 ## GET: /rooms
 List all rooms.
